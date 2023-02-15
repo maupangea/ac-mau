@@ -17,11 +17,11 @@ A continuación, detallamos los pasos que debes seguir en distintos sistemas ope
 
 **Si utilizas alguna otra distribución de Linux u otro sistema operativo distinto a los mencionados a continuación y necesitas soporte técnico, contacta al ayudante del curso.**
 
-### GNU/Linux y MacOS
+### gnu/linux y macos
 
 #### Instalar Julia, Jupyter y Git...
 
-* **...en distribuciones basadas en Debian** ([Mint](https://linuxmint.com/)/[Ubuntu](https://ubuntu.com/)/[Debian](https://www.debian.org/))
+* **En distribuciones basadas en Debian** ([Mint](https://linuxmint.com/)/[Ubuntu](https://ubuntu.com/)/[Debian](https://www.debian.org/))
 1. Abre una terminal virtual y actualiza las bases de datos de paquetes de Debian con el administrador de paquetes [Aptitude](https://wiki.debian.org/Aptitude) corriendo el comando `sudo apt update && sudo apt -y upgrade`.
 1. Instala `julia` y `git` con el comando `sudo apt-get install julia git`.
 1. Para instalar `jupyter`, instala primero Python3 y `pip` con el comando `apt-get install python3 python3-pip python3-dev -y`; después de que haya terminado, ejecuta el comando `pip install jupyter`.
@@ -30,7 +30,7 @@ A continuación, detallamos los pasos que debes seguir en distintos sistemas ope
 * No es posible actualizar versiones de Python2 a Python3; por ende, aunque ya tengas instalado Python2, tendrás que instalar Python3 para poder instalar Jupyter.
 * Si tu computadora tiene [ChromeOS](https://www.google.com/chromebook/chrome-os/), puedes [activar las opciones de desarrollador](https://www.androidauthority.com/how-to-enable-developer-mode-on-a-chromebook-906688/) y luego [activar Linux](https://support.google.com/chromebook/answer/9145439?hl=en). De esta manera, una vez que tengas acceso a una terminal virtual de Linux, podrás seguir las instrucciones para distribuciones basadas en Debian para instalar Julia, Jupyter y Git.
 
-* **...en distribuciones basadas en Arch** ([Manjaro](https://manjaro.org/)/[Endeavour](https://endeavouros.com/)/[Arch](https://archlinux.org/))
+* **En distribuciones basadas en Arch** ([Manjaro](https://manjaro.org/)/[Endeavour](https://endeavouros.com/)/[Arch](https://archlinux.org/))
 1. Abre una terminal virtual y actualiza las bases de datos de paquetes de Arch con el administrador de paquetes [`pacman`](https://wiki.archlinux.org/title/Pacman) corriendo el comando `sudo pacman -Syyu` **antes de instalar cualquier cosa**.
 1. Instala `git` con el comando `sudo pacman -S git`.
 1. Ejecuta los comandos `cd ~` y `git clone https://aur.archlinux.org/yay.git`; después de que el segundo comando haya terminado, ejecuta el comando `cd yay`.
@@ -38,7 +38,7 @@ A continuación, detallamos los pasos que debes seguir en distintos sistemas ope
 1. Actualiza las bases de datos de los paquetes del [AUR](https://wiki.archlinux.org/title/Arch_User_Repository_(Español)) con [`yay`](https://wiki.archlinux.org/title/AUR_helpers#Pacman_wrappers) corriendo el comando `yay -Syyu` **antes de instalar cualquiera de los programas siguientes**.
 1. Instala `julia` y `jupyter` con el comando `yay -S julia-bin jupyter`. 
 
-* **...en MacOS**
+* **En MacOS**
 1. Abre una terminal e instala el administrador de paquetes [hombrew](https://brew.sh/) corriendo el comando `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`.
 1. Instala `jupyter` y `git` con el comando `brew install jupyter git`.
 1. Instala `julia` con el comando `brew install --cask julia`.
@@ -87,8 +87,6 @@ Si no cuentas con una computadora personal o tu computadora no tiene los suficie
 Google Colab es un servicio que ofrece notebooks de Jupyter de manera gratuita con recursos de cómputo totalmente gestionados en la nube sin necesidad de instalar nada en tu computadora local.  
 Los notebooks están desarrollados para ejecutar en Python por default, sin embargo se pueden hacer manipulaciones para utilizar otros programas como julia.  
 Para utilizarlo, ve directamente a la [página oficial de Google Colab](https://colab.research.google.com/), una vez allí verás un recuadro que te pedirá seleccionar un archivo para abrir, selecciona la ventana Google Drive y da click en 'New notebook' para crear un notebook en blanco. Nota: Los archivos que crees de esta manera se almacenarán en una carpeta llamada 'Colab Notebooks' en la página principal de tu carpeta de Google Drive.
-
-También puedes abrir los notebooks del repositorio del curso yendo a la pestaña de 'GitHub', copiando y pegando la siguiente liga `https://github.com/dabnciencias/AC.git` y seleccionando el archivo que quieras abrir.  
 
 En la [siguiente liga](https://colab.research.google.com/github/ageron/julia_notebooks/blob/master/Julia_for_Pythonistas.ipynb#scrollTo=f_1dr-2W5iSU) puedes encontrar un ejemplo de como usar julia desde google colab.
 
