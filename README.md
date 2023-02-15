@@ -17,7 +17,7 @@ A continuación, detallamos los pasos que debes seguir en distintos sistemas ope
 
 **Si utilizas alguna otra distribución de Linux u otro sistema operativo distinto a los mencionados a continuación y necesitas soporte técnico, contacta al ayudante del curso.**
 
-### gnu/linux y macos
+### GNU/Linux y MacOS
 
 #### Instalar Julia, Jupyter y Git...
 
